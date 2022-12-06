@@ -1,0 +1,17 @@
+{
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "gunzip-file": "^0.1.1",
+    "mongoose": "^6.8.0",
+    "parse-url": "^8.1.0"
+  },
+  "main": "etl.js",
+  "scripts": {
+    "start": "node etl.js",
+    "clean": "rm DataForMongo.json; rm -R ./extracted"
+  }
+}
